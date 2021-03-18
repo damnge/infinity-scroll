@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap');
+/* font-family: 'Lobster Two', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Lobster Two', cursive;
+  background-color: whitesmoke;
+}
+
+h1 {
+  margin-top:35px;
+  margin-bottom: 35px;
+  font-size:45px;
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+
+/* Loader */
+
+.loader {
+  position: fixed;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.loader img {
+  position: fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);  
+  /* doesn't matter what size of the page it always keep it in the center */
+}
+
+/* Immage Container */
+
+.image-container {
+  margin:10px 30%;
+}
+
+.image-container img {
+  width:100%;
+  margin-top: 5px;
+}
+
+/* Media Query: Small Smartphone */
+@media screen and (max-width:400px) {
+
+  h1{
+    font-size:22px;
+  }
+  .image-container {
+    margin:10px;
+  }
+}
+
+/* Media Query: Large Smartphone */
+@media (min-width:400px ) and (max-width:750px) {
+
+  h1{
+    font-size:29px;
+  }
+  .image-container {
+    margin:10px;
+  }
+}
+
+/* Media Query: Tablet */
+
+@media (min-width:750px ) and (max-width:900px){
+  h1{
+    font-size:45px;
+  }
+  .image-container {
+    margin:10px;
+  }
+}
+}
